@@ -1,4 +1,10 @@
-const reverseString = function() {
+const reverseString = function(input) {
+  let splitString = input.split('');
+  let output = splitString.reduceRight((acc, curr) =>
+    acc += curr,
+    '');
+
+  return output;
 
 };
 
